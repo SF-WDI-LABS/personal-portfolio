@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>First Training</title>
+  <title>weston</title>
   <!-- meta -->
   <meta charset="utf-8" />
   <meta name="description" content="Personal Site">
@@ -10,16 +10,145 @@
   <!-- mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- styles -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+  <link rel="icon" type="image/png" href="assets/imgs/W.png">
 </head>
 <body>
-  <div id="page-wrapper">
-    <h1>My Personal Page!</h1>
+<!--background image-->
+<img src="assets/imgs/bg.jpg" id="bg">
+<div class="container-fluid" "pagewrapper">
+  <div class="row">
+  <!--header logos and photos-->
+    <div class="col-xs-12">
+      <div>
+        <a id="main_menu"><img class="img-responsive btn logo static homepage menupage"     src="assets/imgs/wd.png"         alt="WD"></a>
+        <a class="backtomain"><img class="img-responsive btn logo static hidden whopage"    src="assets/imgs/who_head.png"   alt="whohead"></a> <!--Who Header-->
+        <a class="backtomain"><img class="img-responsive btn logo static hidden whatpage"   src="assets/imgs/what_head.png"  alt="whathead"></a> <!--What Header-->
+        <a class="backtomain"><img class="img-responsive btn logo static hidden wherepage"  src="assets/imgs/where_head.png" alt="wherehead"></a> <!--Where Header-->
+        <a class="backtomain"><img class="img-responsive btn logo static hidden whypage"    src="assets/imgs/why_head.png"   alt="whyhead"></a> <!--Why Header-->
+      </div>
+  <!--nav bar-->
+      <div class="row">
+        <div id="nav" class="col-xs-4 img-responsive">  <!--HIDDEN nav bar buttons-->
+          <ul class="list-unstyled menu dropdown hidden navbar">
+            <li><a id="who_btn"   href=#><img  class="center-block img-responsive nav-buttons btn" src="assets/imgs/who.png"   alt="who"></a></li>
+            <li><a id="what_btn"  href=#><img  class="center-block img-responsive nav-buttons btn" src="assets/imgs/what.png"  alt="what"></a></li>
+         <!-- <li><a id="where_btn" href=#><img  class="center-block img-responsive nav-buttons btn" src="assets/imgs/where.png" alt="where"></a></li> -->
+            <li><a id="why_btn"   href=#><img  class="center-block img-responsive nav-buttons btn" src="assets/imgs/why.png"   alt="why"></a></li>
+          </ul>
+        </div>
+
+  <!--homepage/dropdown-menu photo-->
+        <div id="mascot" class="col-xs-8 no-gutter">
+          <div class="mascots">
+            <img class="img-responsive mascot menu homepage" src="assets/imgs/wd0.png" alt="wd0"> <!--homepage mascot-->
+            <img class="img-responsive mascot menu menupage hidden" src="assets/imgs/wd1.png" alt="wd1"> <!--when menu drops down mascot-->
+          </div>
+  <!--content-->
+          <div class= "hidden whitebg">   <!--HIDDEN page content-->
+            <!--'who' content-->
+            <div class="page-content whopage hidden" style="background-color: white;">
+              <h4 class="text-center res">Resume
+                <a class="whopage text-center" href="wd_resume.pdf" download>
+                  <div class=" text-center glyphicon glyphicon-download"></div>
+                </a>
+              </h4>
+              <img class="img-responsive resume whopage" src="assets/imgs/wd_resume_copy.png" alt="resume">
+            </div>
+            <!--'what' content-->
+            <div class="page-content whatpage hidden">
+              <!-- Carousel -->
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner text-center" style="background-color: white;" role="listbox">
+                  <div class="item active">
+                    <a href="https://whoplayedonthat.herokuapp.com"><img class="project-images center-block" src="assets/imgs/WhoPlayedOnThat.png" alt="WhoPlayedOnThat"></a>
+                    <div>
+                      <p>An app for all those times that you think, 'Man, that's a funky beat, who played drums on that track?'</p>
+                      <p>-Weston</p>
+                    </div>
+                  </div>
+                  <div class="item projects">
+                    <a href="https://assembled.herokuapp.com"><img class="project-images center-block" src="assets/imgs/GAHub.png" alt="GA-Hub"></a>
+                    <div>
+                      <p>Search application for General Assembly's SF Web Development Immersive labs and lectures</p>
+                      <p>-Anton, Brett, Ivan and Weston</p>
+                    </div>
+                  </div>
+                  <div class="item projects">
+                    <a href="https://vagabondapp1.herokuapp.com"><img class="project-images center-block" src="assets/imgs/Vagabond.png" alt="Vagabond"></a>
+                    <div>
+                      <p>A social travel application. Sign up, login, find and post comments on your favorite travel destinations</p>
+                      <p>-Chris, Thelma, Yvonne and Weston</p>
+                    </div>
+                  </div>
+                  <div class="item projects">
+                  <a href="https://carpegov.herokuapp.com"><img class="project-images center-block" src="assets/imgs/CarpeGov.png" alt="CarpeGov"></a>
+                    <div>
+                      <p>Find, store, sort and take action on current and pending legislation</p>
+                      <p>-Yan Yin and Weston</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <!--'where' content-->
+            <!-- <div class="col-xs-12 page-content wherepage hidden">
+
+              <ul>
+                <li><a href="https://www.facebook.com/weston.dombroski">  <img class="col-xs-1 col-xs-offset-6 responsive btn" onmouseout="this.src='assets/imgs/fb.png'" onmouseover="this.src='assets/imgs/fb_hov.png'" src="assets/imgs/fb.png" alt="facebook"></a></li>
+                <li><a href="https://github.com/westondombroski">         <img class="col-xs-1 col-xs-offset-6 responsive btn" onmouseout="this.src='assets/imgs/gh.png'" onmouseover="this.src='assets/imgs/gh_hov.png'" src="assets/imgs/gh.png" alt="github"></a></li>
+                <li><a href="westondombroski@gmail.com">                  <img class="col-xs-1 col-xs-offset-6 responsive btn" onmouseout="this.src='assets/imgs/gm.png'" onmouseover="this.src='assets/imgs/gm_hov.png'" src="assets/imgs/gm.png" alt="email"></a></li>
+                <li><a href="https://twitter.com/WestonDombroski">        <img class="col-xs-1 col-xs-offset-6 responsive btn" onmouseout="this.src='assets/imgs/tw.png'" onmouseover="this.src='assets/imgs/tw_hov.png'" src="assets/imgs/tw.png" alt="twitter"></a></li>
+                <li><a href="https://www.linkedin.com/in/westondombroski"><img class="col-xs-1 col-xs-offset-6 responsive btn" onmouseout="this.src='assets/imgs/in.png'" onmouseover="this.src='assets/imgs/in_hov.png'" src="assets/imgs/in.png" alt="linkedin"></a></li>
+              </ul>
+            </div> -->
+            <!--'why' content-->
+            <div class="page-content whypage hidden" style="background-color: white;">
+              <h4 class="text-center res">Why Develop?</h4>
+              <h4 class="resume res">Web development offers a practical and effective approach in finding solutions to current and future challenges. Learning to solve problems as they arise with elegant, efficient web based solutions is an incredibly appealing and increasingly necessary skill to possess.</h4>
+              <br>
+              <h4 class="resume">My experience at GA has laid the groundwork for life-long growth as a web developer. Having now built both MEAN stack and Ruby on Rails applications, I am confident in my ability to implement solutions across multiple languages and frameworks and earnest in my commitment to learn, grow and mature as a developer.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <!--footer-->
+  <div class="col-xs-12 footer">
+    <div class="row footer">
+      <ul class="list-inline">
+        <li><a href="https://www.facebook.com/weston.dombroski">  <img class="responsive btn footbar" onmouseout="this.src='assets/imgs/fb.png'" onmouseover="this.src='assets/imgs/fb_hov.png'" src="assets/imgs/fb.png" alt="facebook"></a></li>
+        <li><a href="https://github.com/westondombroski">         <img class="responsive btn footbar" onmouseout="this.src='assets/imgs/gh.png'" onmouseover="this.src='assets/imgs/gh_hov.png'" src="assets/imgs/gh.png" alt="github"></a></li>
+        <li><a href="westondombroski@gmail.com">                  <img class="responsive btn footbar" onmouseout="this.src='assets/imgs/gm.png'" onmouseover="this.src='assets/imgs/gm_hov.png'" src="assets/imgs/gm.png" alt="email"></a></li>
+        <li><a href="https://twitter.com/WestonDombroski">        <img class="responsive btn footbar" onmouseout="this.src='assets/imgs/tw.png'" onmouseover="this.src='assets/imgs/tw_hov.png'" src="assets/imgs/tw.png" alt="twitter"></a></li>
+        <li><a href="https://www.linkedin.com/in/westondombroski"><img class="responsive btn footbar" onmouseout="this.src='assets/imgs/in.png'" onmouseover="this.src='assets/imgs/in_hov.png'" src="assets/imgs/in.png" alt="linkedin"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 </body>
 </html>

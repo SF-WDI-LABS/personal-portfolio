@@ -1,1 +1,100 @@
-/* custom styles */
+html, body {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+body{
+  position: relative;
+}
+h3{
+  text-align: center;
+  padding: 7%;
+
+}
+p{
+  vertical-align: middle;
+  margin: 0;
+}
+.pagewrapper{
+  min-height: 100%;
+  position: relative;
+}
+.logo{
+  max-height: 300px;
+  max-width: auto;
+}
+.mascot {
+  padding-left: 80px;
+  padding-bottom: 100px;
+}
+.nav-buttons{
+  text-align: center;
+}
+.menu{
+  padding-top: 10px;
+}
+.btn{
+  padding: 0;
+  border: none;
+  background: none;
+}
+.no-gutter{
+  padding-left:0;
+  padding-right:0;
+}
+.page-content{
+  margin: 70px;
+  margin-top: 50px;
+}
+.footer{
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+}
+.footbar{
+  padding-top: 15px;
+}
+.whitebg{
+  position: relative;
+  min-height: 100%;
+}
+.navbar {
+  padding-bottom: 80px;
+}
+#mainmenu, .backtomain, #nav, #mascot {
+}
+#bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.resume{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+.res{
+  padding-top: 20px;
+}
+.dropdown{
+  padding-top: 50px;
+}
+.project-images {
+  width: 550px;
+  height: 290px;
+  padding: 10px;
+}
+@font-face {
+      font-family: Aileron;
+      src: url("assets/fonts/aileron/Aileron-Light.otf") format("opentype");
+}
