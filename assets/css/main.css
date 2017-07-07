@@ -1,1 +1,563 @@
 /* custom styles */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  background-color:white;
+  min-width: 330px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6,a {
+  font-family: 'Oxygen', sans-serif;
+}
+p {
+  font-size: 1.2em;
+}
+
+header {
+  color:white;
+  top:0;
+  display:inline-block;
+  width:100%;
+  height: 225px;
+  opacity:1;
+  z-index: 10;
+  padding:0;
+  min-width: 330px;
+}
+.fixed {
+  position:relative;
+}
+
+.solidback {
+  position:absolute;
+  top:0;
+  background-color: black;
+  width:100%;
+  min-width: 320px;
+  left:0;
+  margin-right:0;
+  height: 225px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+  .project {
+    width: 100%;
+  }
+  .project p {
+    position: absolute;
+    top: 23%;
+    transform: translateY(-23%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+}
+
+main.scrolled {
+  top:0;
+  padding-top: calc(56px + 90px - 8px);
+}
+
+@media (min-width: 992px) {
+  img.preview, section {
+    min-height: 250px;
+    height: 21vw;
+    }
+}
+
+@media (max-width:850px) {
+  .project-details .container {
+    width: unset;
+  }
+}
+
+@media (max-width: 485px) {
+  h1.text-right {
+    font-size: 20px;
+  }
+
+  h2.text-right {
+    font-size: 15px;
+  }
+
+  h1.text-right.scrolled {
+    font-size: 15px !important;
+  }
+
+  h2.text-right.scrolled {
+    font-size: 10px !important;
+  }
+
+  .project-details {
+    padding: 10px !important;
+  }
+
+  .project p {
+    padding: 0 !important;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .header-right {
+    width: 100%
+  }
+  main.scrolled {
+    padding-top: calc(56px + 90px + 44px);
+  }
+  .nav-container.scrolled {
+    top:0px !important;
+    background: black;
+    z-index: 100;
+  }
+  .fixed-pin .heading {
+    top: calc(56px + 43px) !important;
+  }
+
+  ul.nav li.dropdown:hover > ul.dropdown-menu, ul.dropdown-menu:hover {
+    z-index: 999;
+  }
+
+  ul .dropdown-menu {
+    margin-top: 0;
+    border: 3px solid white;
+  }
+
+  ul.dropdown-menu li {
+    position: relative;
+    z-index: inherit;
+    display: block;
+  }
+
+  .project-contributions ul {
+    margin-left: 50px !important;
+  }
+}
+@media (max-width: 767px) {
+  ul .dropdown-menu {
+    display: block !important;
+    width: 100%;
+  }
+
+  .navbar-collapse.in {
+    overflow: visible;
+  }
+
+  .projects-nav.nav li.dropdown {
+    display: inline-block;
+    width: 100%;
+  }
+
+  ul.dropdown-menu {
+    margin: 0;
+    border: none;
+    position: relative;
+  }
+
+  span.caret {
+    display: none;
+  }
+
+  .parallax-container {
+    height: 70vh !important;
+    max-height: 70vw;
+    min-height: 200px;
+  }
+}
+
+.header-right {
+  float: right;
+  clear:right;
+  padding-left:0px;
+  height: calc(225px - 56px);
+  min-height: 56px;
+}
+
+.heading-wrapper {
+  height:47px;
+}
+
+.heading {
+  height:47px;
+  z-index: 99;
+  width: 100%;
+  background: white;
+  position: relative;
+}
+
+.header-right.scrolled {
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+}
+
+h1.text-right.scrolled, h2.text-right.scrolled {
+  display: inline-block;
+  height: 100%;
+  margin:0;
+  padding: 15px 0;
+}
+
+h1.text-right.scrolled{
+  font-size: 25px;
+}
+
+h2.text-right.scrolled {
+  font-size: 15px;
+}
+
+.nav-container.scrolled {
+  top: -57px;
+}
+
+.navbar-collapse:before {
+  height: 0;
+}
+
+h1 {
+  margin-bottom:10px;
+  font-size: 36px;
+}
+
+h2 {
+  margin-top:10px;
+  word-wrap: break-word;
+  font-size: 22px;
+}
+
+h3 {
+  padding: 10px;
+  font-size:1.8em;
+  font-weight: 900;
+  margin: 0;
+  text-align: left;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+.project-details h4 {
+  font-size: 2.1em;
+}
+
+.profile-wrapper {
+  height: 56px;
+  padding: 5px;
+  width: 100%;
+  min-height: 56px;
+  position: absolute;
+  top:50px;
+  visibility: hidden;
+}
+
+.profile {
+  height: calc(100% - 10px);
+  border-radius: 10px;
+  position: absolute;
+}
+
+.nav-container {
+  position: relative;
+  text-align: center;
+  clear:right;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-collapse {
+  padding:0;
+  border-top: unset;
+}
+
+.navbar-toggle {
+  color:white;
+}
+
+a, a:hover, a:focus, nav a, nav a:visited, nav a:hover, nav a:focus, #myprojectsdropdown li a:hover, #myprojectsdropdown li a:focus {
+  text-decoration: none;
+  color:white !important;
+}
+
+h4 a, h4 a:hover, h4 a:focus, h4 a:visited {
+  color: black !important;
+}
+
+.nav>li {
+  display: inline-block;
+}
+
+div.in .nav>li, div.collapsing .nav>li, div.collapsing .nav>li>a:focus , #myprojectsdropdown li, #myprojectsdropdown li>a:focus {
+  display: block;
+  background: black;
+}
+
+nav a, .project-links a, #myprojectsdropdown li a {
+  font-size: 1.2em;
+  padding: 10px 15px;
+}
+
+.nav>li>a:hover, .nav>li>a:hover:focus, .project-links a, #myprojectsdropdown>li>a:hover, #myprojectsdropdown>li>a:hover:focus  {
+  background:rgb(0,150,255);
+}
+
+.nav>li>a:focus {
+  background: transparent;
+}
+
+main {
+  margin-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 225px;
+}
+
+section {
+   text-align: center;
+   background: rgba(255,255,255,.9);
+ }
+
+ img.preview {
+   box-shadow: 2px 2px 8px black;
+   transition: box-shadow 250ms;
+
+ }
+
+ img.preview:hover {
+   box-shadow: 2px 2px 20px black;
+   transition: box-shadow 250ms;
+ }
+
+footer {
+   bottom:0;
+   text-align:center;
+   color:black;
+   display:block;
+   margin: auto 0;
+   width:100%;
+ }
+ footer p {
+   margin: 10px 0;
+ }
+
+ .box {
+   height: 55px;
+ }
+
+ .preview {
+   width:100%;
+ }
+
+.caption {
+  color:black;
+  background: rgba(0,0,0,.2);
+  padding:5px 0px;
+  max-width:200px;
+  margin:auto;
+}
+
+.fadingDescription {
+  background: white;
+  color: rgb(0,150,255);
+  width:200px;
+  margin:auto;
+
+}
+
+.caption:hover {
+  color:white;
+  background:rgb(0,150,255);
+}
+
+.icon:hover{
+  border: 0px groove black;
+  transform: scale(1.02);
+  background:white;
+}
+
+.icon {
+  margin: 1%;
+  display:inline-block;
+  width: 47px;
+  border-radius: 50%;
+  background:white;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  vertical-align: middle;
+  color: black;
+}
+
+.project-links a:hover {
+  background:rgba(0,150,255,.8);
+}
+
+.project-links {
+  padding:30px 0;
+  height: 42px;
+  bottom: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.row.projects {
+  background-color:white;
+  color: black;
+
+}
+
+main .row {
+  margin: 0;
+}
+
+.projects div:not(.parallax, .parallax-container) {
+  margin-bottom: 25px;
+  margin-top: 25px;
+
+}
+
+.project {
+  padding:3%;
+}
+
+.project p {
+  padding: 25px;
+}
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  z-index: 0;
+  background-color: white;
+  box-shadow: inset 0px 0px 150px rgba(0,0,0,1);
+}
+
+.parallax-container .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.parallax-container .parallax img {
+  opacity: 0.9;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.project-details {
+  padding: 50px;
+  position: relative;
+}
+
+.project-description {
+  padding: 20px;
+}
+
+.row.projects > :nth-child(2n+0) {
+  /* if I decide to alternate styles again */
+}
+
+.fixed-pin .heading {
+  position: fixed;
+  top: 56px;
+  box-shadow: 0 0 5px black;
+}
+
+.sticky-top {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.skills p, #aboutme p {
+  font-size: 17px;
+}
+
+.skills p, #aboutme p , .project p {
+    line-height: 1.8;
+}
+
+.project p  {
+  font-size: 1.1em;
+}
+
+#aboutme p, .skills p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.skills {
+  padding-top:20px;
+}
+#profile img {
+  height:220px;
+  border-radius: 10px;
+}
+
+#profile .card, #aboutme {
+  padding: 20px;
+}
+
+
+.project-contributions ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0 !important;
+  padding-bottom: calc(42px + 10px);
+}
+
+.project-contributions ul li {
+  padding: 5px 0;
+  line-height: 1.8;
+}
+
+.project-details .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.profile-placeholder {
+  height: 56px;
+  position: absolute;
+  overflow: hidden;
+}
+
+ul.dropdown-menu {
+  padding:0;
+  text-align: center;
+}
+
+.faded-out {
+  opacity: 0;
+}
+
+.faded-in {
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+.header ul {
+  background: black;
+}
