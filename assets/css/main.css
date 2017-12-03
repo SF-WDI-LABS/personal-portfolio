@@ -1,1 +1,10 @@
 /* custom styles */
+#page-wrapper {
+  margin: 0 auto;
+  padding: 5%;
+}
+
+#page-wrapper img {
+  height: 300px;
+  weidth: 300px;
+}
