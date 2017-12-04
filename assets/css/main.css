@@ -1,1 +1,46 @@
 /* custom styles */
+body {
+  background-image: url("https://dragonartz.files.wordpress.com/2009/06/vector-tech-background-card-prev1-by-dragonart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  background-color: rgba(200, 0, 0, 0.6);
+}
+
+.dropdown button {
+  border: 3px double gold;
+  margin: 2% 2%;
+}
+
+.project-container {
+  font-size: 20px;
+}
+
+.list-inline {
+}
+
+#page-wrapper {
+  margin: 2% 2%;
+  padding: 5%;
+  text-align: center;
+  border: 5px solid rgba(0,0,0,.9);
+  border-radius: 35%;
+  background-image: url("https://mishilpatel.files.wordpress.com/2011/11/betweengrassandsky3.png");
+
+}
+
+#page-wrapper img {
+  height: 35%;
+  width: 35%;
+  border-radius: 40%;
+  border: 5px solid rgba(0,0,0,.9);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Intentionally Hidden*/
+#ghost {
+  color: rgba(0, 0, 0, 0);
+}
