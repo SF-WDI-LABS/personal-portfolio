@@ -1,1 +1,14 @@
-/* custom styles */
+$primary-color: color("green", "lighten-2") !default;
+@import "materialize";
+
+
+#main-nav{
+  line-height: 50px;
+}
+.brand-logo{
+  left: 50%;
+  transform: translateX(-50%);
+}
+ul{
+  float: right;
+}
